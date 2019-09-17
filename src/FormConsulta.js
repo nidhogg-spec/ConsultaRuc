@@ -1,5 +1,6 @@
 import React from 'react';
 import RespuestaSUNAT from './RespuestaSUNAT';
+import './FormConsulta.css';
 
 class FormConsulta extends React.Component {
     constructor(props) {
@@ -14,7 +15,7 @@ class FormConsulta extends React.Component {
         this.setState({[e.target.name]: e.target.value})
         this.setState({mostrar:false})
     }
-
+    
     consultarRUC(e) {
         e.preventDefault();
 
@@ -39,14 +40,22 @@ class FormConsulta extends React.Component {
 
     render() {
         return(
-            <div>
-                <form method="GET" onSubmit={this.consultarRUC}>
-                    <label htmlFor="ruc">RUC: </label>
-                    <input type="text" name="ruc" id="ruc" placeholder="Ingrese su RUC" onChange={this.handleChange} value={this.state.ruc}></input>
-                    <button type="submit">Consulta</button>
-                </form>
-                <RespuestaSUNAT consultado={this.state.mostrar} RSunat={this.state.respuesta}></RespuestaSUNAT>
-                
+            <div className = "formulario">
+                <section id="Header">
+                   
+                </section>
+                <section id="Cuerpo">
+                    <form method="GET" onSubmit={this.consultarRUC}>
+                        <label htmlFor="ruc">RUC: </label>
+                        <input type="text" name="ruc" id="ruc" placeholder="Ingrese su RUC" onChange={this.handleChange} value={this.state.ruc}></input>
+                        <button type="submit">Consulta</button>
+                    </form>
+                    <RespuestaSUNAT consultado={this.state.mostrar} RSunat={this.state.respuesta}></RespuestaSUNAT>
+                </section>
+                <section id="Footer">
+                    yyyy
+                </section>
+               
             </div>
         );
     }
