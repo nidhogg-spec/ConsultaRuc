@@ -1,6 +1,6 @@
 import React from 'react';
 import RespuestaSUNAT from './RespuestaSUNAT';
-import './FormConsulta.css';
+import './styles/FormConsulta.css';
 
 class FormConsulta extends React.Component {
     constructor(props) {
@@ -41,9 +41,6 @@ class FormConsulta extends React.Component {
     render() {
         return(
             <div className = "formulario">
-                <section id="Header">
-                   
-                </section>
                 <section id="Cuerpo">
                     <form method="GET" onSubmit={this.consultarRUC}>
                         <label htmlFor="ruc">RUC: </label>
