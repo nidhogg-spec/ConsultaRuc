@@ -1,4 +1,5 @@
 import React from 'react';
+import './RespuestaSUNAT.css'
 
 function RespuestaSUNAT(props) {
 
@@ -22,7 +23,7 @@ function RespuestaSUNAT(props) {
             )
         } else {
             return(
-                <div>
+                <div className="cuerpoforms">
                     <table>
                         <tbody>
                             <tr>

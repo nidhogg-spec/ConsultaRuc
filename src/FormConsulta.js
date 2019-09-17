@@ -40,15 +40,6 @@ class FormConsulta extends React.Component {
 
     render() {
         return(
-<<<<<<< HEAD
-            <div>
-                <form method="GET" onSubmit={this.consultarRUC}>
-                    <label htmlFor="ruc">Ingrese RUC: </label>
-                    <input type="text" name="ruc" id="ruc" placeholder="Ingrese su RUC" onChange={this.handleChange} value={this.state.ruc}></input>
-                    <button type="submit">Consulta</button>
-                </form>
-                <RespuestaSUNAT consultado={this.state.mostrar} RSunat={this.state.respuesta}></RespuestaSUNAT>
-=======
             <div className = "formulario">
                 <section id="Header">
                    
@@ -65,7 +56,6 @@ class FormConsulta extends React.Component {
                     yyyy
                 </section>
                
->>>>>>> d6fa4f3906e4e43f6180a3588c1e0dc6b6140579
             </div>
         );
     }
