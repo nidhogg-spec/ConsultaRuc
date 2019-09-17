@@ -42,17 +42,13 @@ class FormConsulta extends React.Component {
         return(
             <div className = "formulario">
                 <section id="Cuerpo">
-                    <form method="GET" onSubmit={this.consultarRUC}>
-                        <label htmlFor="ruc">RUC: </label>
-                        <input type="text" name="ruc" id="ruc" placeholder="Ingrese su RUC" onChange={this.handleChange} value={this.state.ruc}></input>
-                        <button type="submit">Consulta</button>
+                    <form className="formulario" method="GET" onSubmit={this.consultarRUC}>
+                        <label className="ruc" htmlFor="ruc">RUC: </label>
+                        <input className="inputtext" type="text" name="ruc" id="ruc" placeholder="Ingrese su RUC" onChange={this.handleChange} value={this.state.ruc}></input>
+                        <button className="boton" type="submit">Consulta</button>
                     </form>
                     <RespuestaSUNAT consultado={this.state.mostrar} RSunat={this.state.respuesta}></RespuestaSUNAT>
                 </section>
-                <section id="Footer">
-                    yyyy
-                </section>
-               
             </div>
         );
     }

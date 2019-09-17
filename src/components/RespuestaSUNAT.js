@@ -1,5 +1,5 @@
 import React from 'react';
-import './RespuestaSUNAT.css'
+import './styles/RespuestaSUNAT.css'
 
 function RespuestaSUNAT(props) {
 
@@ -27,35 +27,35 @@ function RespuestaSUNAT(props) {
                     <table>
                         <tbody>
                             <tr>
-                                <td>Respuesta:</td>
+                                <td id="fila1">Respuesta:</td>
                                 <td>{props.RSunat.Respuesta}</td>
                             </tr>
                             <tr>
-                                <td>Cliente:</td>
+                                <td id="fila1">Cliente:</td>
                                 <td>{props.RSunat.Cliente}</td>
                             </tr>
                             <tr>
-                                <td>Codigo Ubigeo:</td>
+                                <td id="fila1">Codigo Ubigeo:</td>
                                 <td>{props.RSunat.Cod_Ubigeo}</td>
                             </tr>
                             <tr>
-                                <td>Direccion:</td>
+                                <td id="fila1">Direccion:</td>
                                 <td>{props.RSunat.Direccion}</td>
                             </tr>
                             <tr>
-                                <td>Condicion Cliente:</td>
+                                <td id="fila1">Condicion Cliente:</td>
                                 <td>{props.RSunat.Nom_CondicionCliente}</td>
                             </tr>
                             <tr>
-                                <td>Estado Cliente:</td>
+                                <td id="fila1">Estado Cliente:</td>
                                 <td>{props.RSunat.Nom_EstadoCliente}</td>
                             </tr>
                             <tr>
-                                <td>Tipo de documento:</td>
+                                <td id="fila1">Tipo de documento:</td>
                                 <td>{props.RSunat.Nom_TipoDoc}</td>
                             </tr>
                             <tr>
-                                <td>Numero de documento:</td>
+                                <td id="fila1">Numero de documento:</td>
                                 <td>{props.RSunat.Nro_Documento}</td>
                             </tr>
                         </tbody>

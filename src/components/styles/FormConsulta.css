@@ -1,5 +1,21 @@
+section{
+    padding: 3%;
+}
 .formulario{
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+    margin: 1%;
+    background-color: #f4f4f4;
+}
+.ruc{
+    font-size: 1.6vw;
+    margin: 5px;
+}
+.inputtext{
+    width: 15%;
+    height: auto;
+    background-color: blue;
+}
+.boton{
+    margin: 5px;
+    width: 9%;
+    height: auto;
 }
