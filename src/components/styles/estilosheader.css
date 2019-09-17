@@ -1,0 +1,8 @@
+.flex-header {
+    background-color: #0072BD;
+    text-align: center;
+}
+.flex-header img {
+    width: 20%;
+    height: auto;
+}
