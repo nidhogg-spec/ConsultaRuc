@@ -41,12 +41,11 @@ class FormConsulta extends React.Component {
         return(
             <div>
                 <form method="GET" onSubmit={this.consultarRUC}>
-                    <label htmlFor="ruc">RUC: </label>
+                    <label htmlFor="ruc">Ingrese RUC: </label>
                     <input type="text" name="ruc" id="ruc" placeholder="Ingrese su RUC" onChange={this.handleChange} value={this.state.ruc}></input>
                     <button type="submit">Consulta</button>
                 </form>
                 <RespuestaSUNAT consultado={this.state.mostrar} RSunat={this.state.respuesta}></RespuestaSUNAT>
-                
             </div>
         );
     }
