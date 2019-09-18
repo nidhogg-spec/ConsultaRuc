@@ -7,6 +7,7 @@ class FormConsulta extends React.Component {
     constructor(props) {
         super(props)
         this.state = {isverified: false};
+        
         this.state = { ruc: "", mostrar: false, respuesta: {}};
 
         this.handleChange = this.handleChange.bind(this);
@@ -19,6 +20,7 @@ class FormConsulta extends React.Component {
     handleChange(e) {
         this.setState({[e.target.name]: e.target.value})
         this.setState({mostrar:false})
+
     }
     
     consultarRUC(e) {
@@ -37,10 +39,12 @@ class FormConsulta extends React.Component {
                     console.log(Object.keys(response).length);
                     
                     this.setState({respuesta: response, mostrar: true});
+                    this.setState({isverified:false})
                 })
                 .catch(error => {
                     console.error('Error:', error)
                     this.setState({mostrar: false});
+                    
                 });
         } 
     }
