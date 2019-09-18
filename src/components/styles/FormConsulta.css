@@ -1,20 +1,40 @@
 section{
     padding: 3%;
+    padding-left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .formulario{
-    margin: 1%;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 .ruc{
-    font-size: 1.6vw;
-    margin: 5px;
+    font-size: 2vw;
+    margin-left: 25%;
 }
 .inputtext{
-    width: 15%;
+    width: 20%;
     height: auto;
+    padding: 0.75%;
 }
 .boton{
-    margin: 5px;
-    width: 9%;
+    width: 20%;
     height: auto;
+    border-radius: 8px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vw;
+    margin: 2% 5%;
+    cursor: pointer;
+    padding: 0.4%;
+    border: #ffffff;
+    background-color: #BDBDBD;
+}
+.formulario .lblresultado{
+    font-size: 1.5vw;
+    text-decoration: underline;
+    text-decoration-color: #BDBDBD;
+    color: #BDBDBD;
+    margin-left: 40%;
+    padding-top: 20%;
 }

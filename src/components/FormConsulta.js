@@ -1,6 +1,7 @@
 import React from 'react';
 import RespuestaSUNAT from './RespuestaSUNAT';
 import './styles/FormConsulta.css';
+import ReCAPTCHA from "react-google-recaptcha";
 
 class FormConsulta extends React.Component {
     constructor(props) {
@@ -19,7 +20,7 @@ class FormConsulta extends React.Component {
     consultarRUC(e) {
         e.preventDefault();
 
-        var url = new URL('http://192.168.1.78:3000/api/APadronSunat/consulta');
+        var url = new URL('http://consultaruc.hopto.org:3000/api/APadronSunat/consulta');
         var params = {ruc: this.state.ruc};
 
         url.search = new URLSearchParams(params);
@@ -42,11 +43,12 @@ class FormConsulta extends React.Component {
         return(
             <div className = "formulario">
                 <section id="Cuerpo">
-                    <form className="formulario" method="GET" onSubmit={this.consultarRUC}>
+                    <form className="formulario2" method="GET" onSubmit={this.consultarRUC}>
                         <label className="ruc" htmlFor="ruc">RUC: </label>
                         <input className="inputtext" type="text" name="ruc" id="ruc" placeholder="Ingrese su RUC" onChange={this.handleChange} value={this.state.ruc}></input>
                         <button className="boton" type="submit">Consulta</button>
                     </form>
+                    <ReCAPTCHA sitekey='http://consultaruc.hopto.org:3000/api/APadronSunat/consulta' render='explicit'></ReCAPTCHA>
                     <RespuestaSUNAT consultado={this.state.mostrar} RSunat={this.state.respuesta}></RespuestaSUNAT>
                 </section>
             </div>

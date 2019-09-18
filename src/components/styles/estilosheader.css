@@ -1,8 +1,26 @@
 .flex-header {
-    background-color: #0072BD;
+    background-color: #f2f2f2;
     text-align: center;
+    padding: 1%;
+}
+.htitulo {
+    font-size: 6vw;
+    text-align: center;
+    color: black;
+    margin: 1%;
+    background-color: #f2f2f2;
+}
+.hsubtitulo {
+    font-size: 2vw;
+    text-align: center;
+    margin: 1%;
+    background-color: #f2f2f2;
+    color: black;
 }
 .flex-header img {
-    width: 20%;
+    background: #f2f2f2;
+    margin: auto;
+    width: 25%;
     height: auto;
+    padding: 1%;
 }

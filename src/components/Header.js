@@ -1,14 +1,14 @@
 import React from 'react';
 import './styles/estilosheader.css'
-import imgsunat from './img/imgsunat.png'
+import logopale from './img/logopale.png'
 
 function Header() {
     return(
         <header className="header">
             <div className="flex-header">
-                <div><h1>Consulta con tu numero de RUC</h1></div>
-                <div><img src={imgsunat}></img></div>
-                <div><h3>"Rapido, Ligero y Seguro"</h3></div>
+                <div><h1 className='htitulo'>iFacturacion</h1></div>
+                <div><h3 className='hsubtitulo'>"Rapido, Ligero y Seguro"</h3></div>
+                <div><img src={logopale}/></div>
             </div>
         </header>
     );
