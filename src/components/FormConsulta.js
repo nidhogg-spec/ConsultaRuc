@@ -46,7 +46,7 @@ class FormConsulta extends React.Component {
     }
     handleSubscribe(){
         if(this.state.isverified){
-            alert("confirmado");
+           
         }else{
             alert("confirma que eres humano");
         }
@@ -62,6 +62,8 @@ class FormConsulta extends React.Component {
         }
     }
     render() {
+    const muestra=this.state.mostrar; 
+
         return(
             <div className = "formulario">
                 <section id="Cuerpo">
@@ -70,13 +72,16 @@ class FormConsulta extends React.Component {
                         <input className="inputtext" type="text" name="ruc" id="ruc" placeholder="Ingrese su RUC" onChange={this.handleChange} value={this.state.ruc}></input>
                         <button className="boton" type="submit" onClick={this.handleSubscribe}>Consulta</button>
                     </form>
-                    <Recaptcha
-                        sitekey='6LfAAbkUAAAAAIb6TruJFJxi5sBA7NR3OGXmnbou'
-                        render='explicit'
+                    {!muestra ? <Recaptcha
                         onloadCallback={this.recaptchaload}
                         verifyCallback={this.verifyCallback}
-                    />
-                    <RespuestaSUNAT consultado={this.state.mostrar} RSunat={this.state.respuesta}></RespuestaSUNAT>
+                        sitekey='6LfAAbkUAAAAAIb6TruJFJxi5sBA7NR3OGXmnbou'  
+                        render = 'explicit'
+                    /> : null} 
+                    <RespuestaSUNAT 
+                        consultado={this.state.mostrar} 
+                        RSunat={this.state.respuesta}>
+                    </RespuestaSUNAT>
                 </section>
             </div>
         );

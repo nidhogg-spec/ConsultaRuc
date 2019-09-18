@@ -5,7 +5,7 @@ function RespuestaSUNAT(props) {
 
     if (!props.consultado) {
         return(
-            <label className='lblresultado'>Ruc no consultado</label>
+            null
         );
     } else {
         if (Object.keys(props.RSunat).length === 1) {
