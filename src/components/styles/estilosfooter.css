@@ -1,32 +1,4 @@
 .titulo{
     text-align: center;
-    margin: auto;
-    background-color: #bb002e;
-    padding-top: 2%; 
-    font-size: 3vw;  
+    font-size: 1.2vw;  
 }
-.flex-footer {
-    display: flex;
-    flex-direction: row;
-    background-color: #bb002e;
-    width: 100%;
-    height: auto;
-    justify-content: space-around;
-    font-family: sans-serif;
-    padding-bottom: 2%;
-  }
-  .flex-footer p {
-    font-size: 1.5vw;
-    font-weight: bold;
-  }
-  .flex-footer ul {
-    font-size: 1vw;
-  }
-  .flex-redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .flex-redes  img{
-    max-width: 33px;
-  }
