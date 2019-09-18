@@ -2,7 +2,8 @@
     text-align: center;
     margin: auto;
     background-color: #bb002e;
-    padding-top: 2%;    
+    padding-top: 2%; 
+    font-size: 3vw;  
 }
 .flex-footer {
     display: flex;
