@@ -19,7 +19,7 @@ function Footer(){
                 </div> 
                 <div>
                     <p>Redes Sociales:</p>
-                    <div class="flex-redes">
+                    <div className="flex-redes">
                         <div><img src={twiterlogo}/></div>
                         <div><img src={facebooklogo}/></div>
                     </div>
