@@ -4,6 +4,10 @@
     text-decoration: none;
     font-family: roboto;
 }
+.homepage{
+    width: 100%;
+    height: auto;
+}
 img.logo {
     width: 20%;
     height:auto;

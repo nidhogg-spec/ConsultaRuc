@@ -5,16 +5,16 @@ import '../components/styles/Home.css'
 class App extends React.Component {
   render() {
   return (
-    <section>
+    <section className="homepage">
         <section id="header">
           <div id="headerlogo">
               <img className="logo" src={logopale} alt="logo"></img>
           </div>
           <div id="hero">
-              <p class="frase1">
+              <p className="frase1">
                   Desarrollo y Producción de Software
               </p>
-              <p class="frase2" id="color-uno">
+              <p className="frase2" id="color-uno">
                   "7 años en desarrollo de software a medida"
               </p>
           </div>
