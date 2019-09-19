@@ -1,15 +1,31 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from "../components/Footer";
-import { Link } from 'react-router-dom';
+import logopale from '../components/img/logopale.png'
+import '../components/styles/Home.css'
 
-function App() {
+class App extends React.Component {
+  render() {
   return (
-    <div className="App container">
-      <Header></Header>
-      <Footer></Footer>
-    </div>
+    <section>
+        <section id="header">
+          <div id="headerlogo">
+              <img className="logo" src={logopale} alt="logo"></img>
+          </div>
+          <div id="hero">
+              <p class="frase1">
+                  Desarrollo y Producción de Software
+              </p>
+              <p class="frase2" id="color-uno">
+                  "7 años en desarrollo de software a medida"
+              </p>
+          </div>
+        </section>
+        <section id="cuerpo">
+        </section>
+        <section id="final">
+        </section>
+    </section>
   );
+  }
 }
 
 export default App;

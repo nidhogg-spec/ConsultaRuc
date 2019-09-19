@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: roboto;
+}
+img.logo {
+    width: 20%;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#headerlogo{
+    background-color: #ECECEC;
+    padding: 0.5%;
+}
+#hero{
+    width: 100%;
+    height: auto;
+    padding-bottom: 25%;
+    font-size:italic;
+    background-color: white;
+    text-align: center;
+    color:#000;
+    /*background-image: url("d:/Proyectopale/img/gifhero.gif");*/
+    background-size: 100%;
+}
+.frase1{
+    font-size: 7vw;
+}
+.frase2{
+    font-size: 4vw;
+}
+.flex-porque{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #BB002E;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.flex-porque span {
+    font-size: 5vw;
+    text-align: center;
+}
+.flex-cuerpo{
+    display: flex;
+    height: auto;
+    background-color:white; 
+    justify-content: space-around;
+}
+.flex-cuerpo #cuadrado{
+    filter: drop-shadow(5px 5px 10px #444);
+    height: auto;
+}
+.flex-cuerpo #circulo{
+    filter: drop-shadow(5px 5px 10px #444);
+    height: auto;
+}
+.flex-cuerpo #circulo{
+    filter: drop-shadow(5px 5px 10px #444);
+    height: auto;
+}
+.flex-cuerpo #circulo p{
+  font-size: 3vw;
+  height: auto;
+}
+.flex-cuerpo div{
+    width: 90%;
+    height: auto;
+    margin: 2%;
+    text-align: center;
+    font-size: 30px;
+}
+.flex-cuerpo div#circulo img{
+    width:100%;
+    height:auto;
+    border-radius:150px;
+}
+.flex-cuerpo div#cuadrado{
+    background-color: #E8E8E8;
+    height: auto;
+}
+/*comienza la parte de que es*/
+.flex-cuerpo .flex-quees div p{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 2.5vw;
+}
+.flex-cuerpo .flex-quees div img{
+    width: 60%;
+    height: auto;
+    border-radius: 40px;
+    filter: drop-shadow(5px 5px 10px #444);
+
+}
+.flex-cuerpo .flex-quees div p#descripcion{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.5vw;
+}
+.flex-cuerpo .flex-quees #enlace{
+    text-align: right;
+    font-weight: bolder;
+    font-size: 1.5vw;
+    margin-top: 11%;
+}
+/*termina la parte de que es*/
+/*comienza la parte de quienes somos*/
+.flex-cuerpo .flex-quienesomos{
+    align-content: center;
+}
+.flex-cuerpo .flex-quienesomos div p{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 2.5vw;
+}
+.flex-cuerpo .flex-quienesomos div img{
+    width: 29%;
+    border-radius: 40px;
+    filter: drop-shadow(5px 5px 10px #444);
+}
+.flex-cuerpo .flex-quienesomos div p#descripcion{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.5vw;
+}
+.flex-cuerpo .flex-quienesomos #enlace{
+    text-align: right;
+    font-weight: bolder;
+    font-size: 1.5vw;
+    margin-top: 11%;
+    
+}
+/*termina la parte de quienes somos*/
+div.flex-certificaciones{
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #BB002E;
+  justify-content: center;
+  align-items: center;
+}
+.flex-certificaciones #imgiso{
+  width: 10%;
+  height: auto;
+  align-items: center;
+}
+.flex-container {
+    display: flex;
+    height: auto;
+    background-color:white; 
+    justify-content: space-around;
+  }
+.flex-container #cuadrado {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    margin: 5%;
+    filter: drop-shadow(5px 5px 10px #444);
+    background-color: #E8E8E8;
+}
+.flex-container .flex-web h3{
+  font-size: 3vw;
+}
+.flex-apps {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30%;
+  width: 40%;
+  height: auto;
+}
+.flex-apps img {
+  width: 100%;
+  height: auto;
+}
+.flex-container .flex-web #Subtitulo{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2.5vw;
+}
+.flex-web ul li{
+  text-align: center;
+  list-style-position: inside;
+  font-size: 2vw;
+}
+.flex-container .flex-web #enlace{
+  text-align: right;
+  margin: 5%;
+  font-weight: bolder;
+  font-size: 2vw;
+}
+#final #servicios .flex-container {
+  width: 100%;
+  height: auto;
+}
+ /* responsive footer */
+
+ .flex-footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #bb002e;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+}
+
+.flex-footer > div {
+  padding: 10%;
+  font-family: roboto;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+.flex-footer p {
+  width: 300%;
+  height: auto;
+  font-size: 2vw;
+}
+
+.flex-footer ul {
+  width: 180%;
+  font-size: 1.2vw;
+}
+
+.flex-redes {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: auto;
+  justify-content: space-around;
+}
+.flex-redes  img{
+  max-width: 50%;
+  height: auto;
+  padding-bottom: 60%;
+}
