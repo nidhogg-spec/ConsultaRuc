@@ -73,7 +73,7 @@ class FormConsulta extends React.Component {
                 <section id="Cuerpo">
                     <form className="formulario2" method="GET" onSubmit={this.consultarRUC}>
                         <label className="ruc" htmlFor="ruc">RUC: </label>
-                        <input className="inputtext" type="text" name="ruc" id="ruc" placeholder="Ingrese su RUC" onChange={this.handleChange} value={this.state.ruc}></input>
+                        <input className="inputtext" type="text" name="ruc" id="ruc" placeholder="Ingrese su RUC" onChange={this.handleChange} value={this.state.ruc} autoComplete="off"></input>
                         <button className="boton" type="submit" onClick={this.handleSubscribe}>Consulta</button>
                     </form>
                     <div className='captchacss'>
