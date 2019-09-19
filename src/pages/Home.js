@@ -1,7 +1,8 @@
 import React from 'react';
-import FormConsulta from './components/FormConsulta';
-import Header from './components/Header';
-import Footer from "./components/Footer";
+import FormConsulta from '../components/FormConsulta';
+import Header from '../components/Header';
+import Footer from "../components/Footer";
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
